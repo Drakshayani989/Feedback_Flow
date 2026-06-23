@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FeedbackFlow</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <h1>FeedbackFlow ⭐</h1>
+        <p>Share Your Learning Experience</p>
+    </header>
+
+    <div class="stats">
+
+        <div class="stat-card">
+            <h2 id="avgRating">4.8</h2>
+            <span>Average Rating</span>
+        </div>
+
+        <div class="stat-card">
+            <h2 id="totalReviews">24</h2>
+            <span>Total Reviews</span>
+        </div>
+
+    </div>
+
+    <div class="main">
+
+        <!-- Form -->
+        <div class="form-card">
+
+            <h2>Submit Review 🚀</h2>
+
+            <input
+            type="text"
+            id="name"
+            placeholder="Your Name">
+
+            <select id="course">
+                <option>Python</option>
+                <option>Java</option>
+                <option>React</option>
+                <option>Web Development</option>
+            </select>
+
+            <input
+            type="number"
+            min="1"
+            max="5"
+            id="rating"
+            placeholder="Rating (1-5)">
+
+            <textarea
+            id="feedback"
+            rows="5"
+            placeholder="Write your feedback..."></textarea>
+
+            <button onclick="submitFeedback()">
+                Submit Review
+            </button>
+
+        </div>
+
+
+        <!-- Reviews -->
+        <div class="review-section">
+
+            <h2>Recent Reviews</h2>
+
+            <div id="cards">
+
+                <div class="card">
+
+                    <div class="user">
+
+                        <div class="avatar">
+                            R
+                        </div>
+
+                        <div>
+                            <h3>Rahul</h3>
+                            <span>Python</span>
+                        </div>
+
+                    </div>
+
+                    <div class="stars">
+                        ⭐⭐⭐⭐⭐
+                    </div>
+
+                    <div class="message">
+                        Excellent course with clear explanations.
+                    </div>
+
+                </div>
+
+
+                <div class="card">
+
+                    <div class="user">
+
+                        <div class="avatar">
+                            A
+                        </div>
+
+                        <div>
+                            <h3>Akhil</h3>
+                            <span>Java</span>
+                        </div>
+
+                    </div>
+
+                    <div class="stars">
+                        ⭐⭐⭐⭐
+                    </div>
+
+                    <div class="message">
+                        Very interactive and practical sessions.
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+<script src="script.js"></script>
+</body>
+</html>
